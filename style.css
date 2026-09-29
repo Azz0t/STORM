@@ -46,6 +46,19 @@ h2 {
    background: #D4D4D4;
 }
 
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+h2 {
+   font-size: 3.7rem;
+   letter-spacing: 0.125rem;
+   text-transform: uppercase;
+}
+
+}
 
 /*==========================| SECTION — HEADER |==========================*/
 header {
@@ -116,6 +129,18 @@ header nav a:hover {
    background-color: #1F1F1F;
 }
 
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+   header {
+      display: none;
+   }
+}
+
+
+
 
 /*==========================| SECTION — FIRST-VIEW |==========================*/
 .section-first {
@@ -162,11 +187,11 @@ header nav a:hover {
    width: 18rem;
    height: 3.3rem;
    margin-top: 1.25rem;
+   font-size: 1.5rem;
    display: flex;
    justify-content: center;
    align-items: center;
    box-sizing: border-box;
-   font-size: 1.5rem;
    text-transform: uppercase;
    font-weight: 900;
    letter-spacing: 0.10625rem;
@@ -189,6 +214,32 @@ header nav a:hover {
    box-shadow: 0 0 0 #e9e9e9;
    top: 0.5rem;
 }
+
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+   .section-first {
+      background-image: url('./assets/images/home-background-mobile.jpg') !important;
+   }
+
+   .first-title {
+      width: 44rem;
+   }
+   .first-subtitle {
+      width: 44rem;
+      font-size: 1.9rem;
+   }
+   .cta-button {
+      width: 28rem;
+      height: 6rem;
+      margin-top: 2rem;
+      font-size: 2.7rem;
+   }
+}
+
+
 
 /*==========================| SECTION — CLAN-ACTIVITY |==========================*/
 .section-activity {
@@ -362,10 +413,53 @@ header nav a:hover {
    }
 }
 
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   .section-activity {
+      min-height: auto;
+      padding: 4rem 0.5rem;
+   }
+
+   .section-activity .commitments-cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      width: 100%;
+   }
+
+   .section-activity .commitments-card {
+      width: 98vw;
+      max-width: none;
+      text-align: center;
+   }
+
+   .section-activity .commitments-card .box-image {
+      width: 80%;
+      height: 38rem;
+      margin: 0 auto;
+   }
+
+   .section-activity .commitments-card .box-text {
+      margin: 0.75rem 0 0 11rem;
+   }
+
+   .section-activity .commitments-card .box-text h3 {
+      padding-left: 1rem;
+      font-size: 2.2rem;
+   }
+   .section-activity .commitments-card .box-image img {
+      filter: grayscale(0%);
+   }
+}
+
 
 
 /*==========================| SECTION — HISTORY |==========================*/
-
 .section-history {
    display: flex;
    align-items: center;
@@ -422,6 +516,32 @@ header nav a:hover {
 
 .section-history .box-text p strong {
    text-transform: uppercase;
+}
+
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   .section-history {
+      gap: 0rem;
+   }
+   .section-history .box-text {
+      max-width: 30rem;
+   }
+   .section-history .box-text h2 {
+      font-size: 2.7rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.06rem;
+   }
+
+   .section-history .box-text p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 0 0 0.3rem 0;
+   }
+
 }
 
 
@@ -704,6 +824,63 @@ header nav a:hover {
    }
 }
 
+ /*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   .section-сommand {
+      min-height: auto;
+      padding: 4rem 0.25rem;
+   }
+
+   .box-commanders {
+      width: 100%;
+      max-width: none;
+   }
+
+   .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 5rem;
+      width: 100%;
+   }
+
+   .grid-3 > * {
+      width: 80%;
+      height: 100%;
+   }
+
+   .section-сommand .box-image {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+   }
+
+   .section-сommand .box-texte {
+      padding: 1.5rem 1.5rem 1.8rem;
+   }
+
+   .section-сommand .box-texte h3 {
+      font-size: 3.3rem;
+      letter-spacing: .08em;
+   }
+
+   .section-сommand .box-texte p {
+      font-size: 1.5rem;
+      letter-spacing: .12em;
+   }
+
+   .section-сommand .rank-tag {
+      top: 0.75rem;
+      left: 0.9rem;
+      font-size: 1.5rem;
+      padding: 0.25rem 0.5rem;
+   }
+
+}
 
 
 /*==========================| SECTION — VIDEO |==========================*/
@@ -853,6 +1030,23 @@ header nav a:hover {
    }
 }
 
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   .grid-section-video {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 0.75rem;
+      width: 95vw;
+      margin: auto;
+   }
+
+}
+
+
 
 /*==========================| NEWS — SECTION |==========================*/
 .section-news {
@@ -968,6 +1162,33 @@ header nav a:hover {
    }
 }
 
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   .section-news {
+      min-height: auto;
+      padding: 4rem 0.25rem;
+   }
+
+   .section-news .grid-3 {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      width: 100%;
+   }
+
+   .section-news .grid-3 .news-card {
+      width: 95vw;
+      max-width: none;
+      flex-shrink: 0;
+   }
+
+}
+
 
 
 /*==========================| JOIN — SECTION |==========================*/
@@ -1040,6 +1261,44 @@ header nav a:hover {
    }
 }
 
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   .section-join {
+      height: 70vh;
+      flex-direction: column;
+   }
+
+   .section-join .join-content {
+      width: 100%;
+      margin-top: 200px;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 1rem 2rem;
+      box-sizing: border-box;
+   }
+
+   .section-join .join-image {
+      width: 100%;
+      justify-content: end;
+      align-items: flex-end;
+   }
+
+   .section-join .join-image img {
+      width: 90%;
+      height: auto;
+   }
+
+   .join-content .cta-button {
+      width: 40rem;
+      height: 8rem;
+      font-size: 4rem;
+   }
+
+}
 
 
 
@@ -1055,4 +1314,20 @@ footer {
 
 footer p {
    font-size: 0.6875rem;
+}
+
+/*==================
+   MOBILE
+   768px -
+===================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   footer {
+      height: 3rem;
+   }
+
+   footer p {
+      font-size: 1.5rem;
+   }
+
 }
