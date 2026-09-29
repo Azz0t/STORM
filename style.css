@@ -1323,7 +1323,7 @@ footer p {
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
    footer {
-      height: 3rem;
+      height: 6rem;
    }
 
    footer p {
