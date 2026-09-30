@@ -1247,7 +1247,7 @@ header nav a:hover {
 ===================*/
 @media (min-width: 1200px) and (max-width: 1799px) {
    .section-join .join-image img {
-      width: 75%;
+      width: 65%;
    }
 }
 
