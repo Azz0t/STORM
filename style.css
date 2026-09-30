@@ -1194,7 +1194,7 @@ header nav a:hover {
 /*==========================| JOIN — SECTION |==========================*/
 .section-join {
    width: 100%;
-   height: 70vh;
+   height: 80vh;
    display: flex;
    background-image: url("./assets/images/textures/black-dotted-texture.jpg");
    background-repeat: no-repeat;
@@ -1247,7 +1247,7 @@ header nav a:hover {
 ===================*/
 @media (min-width: 1200px) and (max-width: 1799px) {
    .section-join .join-image img {
-      width: 65%;
+      width: 60%;
    }
 }
 
