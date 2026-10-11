@@ -1,4 +1,4 @@
-/*==========================| GLOBAL |==========================*/
+/*==========================| ALL |==========================*/
 html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -46,19 +46,33 @@ h2 {
    background: #D4D4D4;
 }
 
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
-
-h2 {
-   font-size: 3.7rem;
-   letter-spacing: 0.125rem;
-   text-transform: uppercase;
+   h2 {
+      font-size: 3.7rem;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+   }
 }
 
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
 }
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
+   h2 {
+      font-size: 3rem;
+   }
+}
+
+
 
 /*==========================| SECTION — HEADER |==========================*/
 header {
@@ -129,13 +143,38 @@ header nav a:hover {
    background-color: #1F1F1F;
 }
 
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
    header {
       display: none;
+   }
+}
+
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
+}
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
+   header nav {
+      gap: 0.6rem;
+   }
+   header nav a {
+      font-size: 0.8rem;
+   }
+   header nav a.nav-icon {
+      width: 2.2rem;
+      height: 2.2rem;
+   }
+
+   header nav a.nav-icon img {
+      width: 1rem;
    }
 }
 
@@ -173,10 +212,10 @@ header nav a:hover {
 
 .first-subtitle {
    width: 24rem;
-   margin-top: 1rem;
    font-size: 1rem;
+   margin-top: 1rem;
    font-weight: 900;
-   letter-spacing: 0.10625rem;
+   letter-spacing: 0.1rem;
    line-height: 1.1;
    color: #e9e9e9;
    text-align: center;
@@ -186,8 +225,8 @@ header nav a:hover {
 .cta-button {
    width: 18rem;
    height: 3.3rem;
-   margin-top: 1.25rem;
    font-size: 1.5rem;
+   margin-top: 1.25rem;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -215,10 +254,9 @@ header nav a:hover {
    top: 0.5rem;
 }
 
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
    .section-first {
       background-image: url('./assets/images/home-background-mobile.jpg') !important;
@@ -236,6 +274,30 @@ header nav a:hover {
       height: 6rem;
       margin-top: 2rem;
       font-size: 2.7rem;
+   }
+}
+
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
+}
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
+   .first-title {
+      width: 34rem;
+   }
+   .first-subtitle {
+      width: 28rem;
+      font-size: 1.2rem;
+   }
+   .cta-button {
+      width: 21rem;
+      height: 3.6rem;
+      font-size: 1.7rem;
    }
 }
 
@@ -317,106 +379,9 @@ header nav a:hover {
    border-left: 2px solid white;
 }
 
-/*==================
-   TABLETTE
-   768px → 1199px
-===================*/
-@media (min-width: 768px) and (max-width: 1199px) {
-
-   .section-activity {
-      min-height: 50rem;
-      padding: 3rem 3rem;
-   }
-
-   .section-activity .commitments-cards {
-      gap: 1.25rem;
-      max-width: 60rem;
-   }
-
-   .section-activity .commitments-card {
-      width: calc((100% - 2.5rem) / 3);
-      max-width: 18rem;
-   }
-
-   .section-activity .commitments-card .box-image {
-      width: 100%;
-      height: 22rem;
-   }
-
-   .section-activity .commitments-card .box-text {
-      margin: 0.375rem 0 0 1.5rem;
-   }
-
-   .section-activity .commitments-card .box-text h3 {
-      padding-left: 0.65rem;
-      font-size: 0.95rem;
-   }
-}
-
-
-/*==================
-   DESKTOP NORMAL
-   1200px → 1799px
-===================*/
-@media (min-width: 1200px) and (max-width: 1799px) {
-
-   .section-activity {
-      padding: 4rem 2rem;
-   }
-
-   .section-activity .commitments-cards {
-      gap: 4.375rem;
-      max-width: 82rem;
-   }
-
-   .section-activity .commitments-card {
-      width: 20.625rem;
-   }
-
-   .section-activity .commitments-card .box-image {
-      width: 25rem;
-      height: 31.25rem;
-   }
-}
-
-
-/*==================
-   BIG DESKTOP
-   1800px +
-===================*/
-@media (min-width: 1800px) {
-
-   .section-activity {
-      padding: 4rem 3rem;
-   }
-
-   .section-activity .commitments-cards {
-      gap: 5rem;
-      max-width: 90rem;
-   }
-
-   .section-activity .commitments-card {
-      width: 22rem;
-   }
-
-   .section-activity .commitments-card .box-image {
-      width: 27rem;
-      height: 34rem;
-   }
-
-   .section-activity .commitments-card .box-text {
-      margin-left: 2.5rem;
-   }
-
-   .section-activity .commitments-card .box-text h3 {
-      font-size: 1.35rem;
-   }
-}
-
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
    .section-activity {
@@ -454,6 +419,95 @@ header nav a:hover {
    }
    .section-activity .commitments-card .box-image img {
       filter: grayscale(0%);
+   }
+}
+
+/*==========================
+   TABLETTE | 768px → 1199px
+==========================*/
+@media (min-width: 768px) and (max-width: 1199px) {
+
+   .section-activity {
+      min-height: 50rem;
+      padding: 3rem 3rem;
+   }
+
+   .section-activity .commitments-cards {
+      gap: 1.25rem;
+      max-width: 60rem;
+   }
+
+   .section-activity .commitments-card {
+      width: calc((100% - 2.5rem) / 3);
+      max-width: 18rem;
+   }
+
+   .section-activity .commitments-card .box-image {
+      width: 100%;
+      height: 22rem;
+   }
+
+   .section-activity .commitments-card .box-text {
+      margin: 0.375rem 0 0 1.5rem;
+   }
+
+   .section-activity .commitments-card .box-text h3 {
+      padding-left: 0.65rem;
+      font-size: 0.95rem;
+   }
+}
+
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
+   .section-activity {
+      padding: 4rem 2rem;
+   }
+
+   .section-activity .commitments-cards {
+      gap: 4.375rem;
+      max-width: 82rem;
+   }
+
+   .section-activity .commitments-card {
+      width: 20.625rem;
+   }
+
+   .section-activity .commitments-card .box-image {
+      width: 25rem;
+      height: 31.25rem;
+   }
+}
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
+   .section-activity {
+      padding: 4rem 3rem;
+   }
+
+   .section-activity .commitments-cards {
+      gap: 5rem;
+      max-width: 90rem;
+   }
+
+   .section-activity .commitments-card {
+      width: 22rem;
+   }
+
+   .section-activity .commitments-card .box-image {
+      width: 27rem;
+      height: 34rem;
+   }
+
+   .section-activity .commitments-card .box-text {
+      margin-left: 2.5rem;
+   }
+
+   .section-activity .commitments-card .box-text h3 {
+      font-size: 1.35rem;
    }
 }
 
@@ -518,10 +572,9 @@ header nav a:hover {
    text-transform: uppercase;
 }
 
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
    .section-history {
@@ -542,6 +595,18 @@ header nav a:hover {
       margin: 0 0 0.3rem 0;
    }
 
+}
+
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
+}
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
 }
 
 
@@ -693,10 +758,66 @@ header nav a:hover {
    margin: 0.375rem 0 0;
 }
 
-/*==================
-   TABLETTE
-   768px → 1199px
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+   .section-сommand {
+      min-height: auto;
+      padding: 4rem 0.25rem;
+   }
+
+   .box-commanders {
+      width: 100%;
+      max-width: none;
+   }
+
+   .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 5rem;
+      width: 100%;
+   }
+
+   .grid-3 > * {
+      width: 80%;
+      height: 80%;
+   }
+
+   .section-сommand .box-image {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+   }
+
+   .section-сommand .box-texte {
+      padding: 1.5rem 1.5rem 1.8rem;
+   }
+
+   .section-сommand .box-texte h3 {
+      font-size: 3.3rem;
+      letter-spacing: .08em;
+   }
+
+   .section-сommand .box-texte p {
+      font-size: 1.5rem;
+      letter-spacing: .12em;
+   }
+
+   .section-сommand .rank-tag {
+      top: 0.75rem;
+      left: 0.9rem;
+      font-size: 1.5rem;
+      padding: 0.25rem 0.5rem;
+   }
+
+}
+
+/*==========================
+   TABLETTE | 768px → 1199px
+==========================*/
 @media (min-width: 768px) and (max-width: 1199px) {
 
    .section-сommand {
@@ -740,12 +861,10 @@ header nav a:hover {
    }
 }
 
-/*==================
-   DESKTOP NORMAL
-   1200px → 1799px
-===================*/
-@media (min-width: 1200px) {
-
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
    .section-сommand {
       padding: 4rem 2rem;
    }
@@ -786,12 +905,10 @@ header nav a:hover {
    }
 }
 
-/*==================
-   BIG DESKTOP
-   1800px +
-===================*/
-@media (min-width: 1800px) {
-
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
    .section-сommand {
       padding: 4rem 3rem;
    }
@@ -822,18 +939,6 @@ header nav a:hover {
       font-size: 0.6875rem;
       letter-spacing: .2em;
    }
-}
-
- /*==================
-   MOBILE
-   768px -
-===================*/
-@media (max-width: 768px), (hover: none) and (pointer: coarse) {
-
-   .section-сommand {
-      display: none;
-   }
-  
 }
 
 
@@ -932,11 +1037,24 @@ header nav a:hover {
    display: none;
 }
 
+/*==========================
+   MOBILE | 768px -
+==========================*/
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
-/*==================
-   TABLETTE
-   768px → 1199px
-===================*/
+   .grid-section-video {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 0.75rem;
+      width: 95vw;
+      margin: auto;
+   }
+
+}
+
+/*==========================
+   TABLETTE | 768px → 1199px
+==========================*/
 @media (min-width: 768px) and (max-width: 1199px) {
    .grid-section-video {
       grid-template-columns: repeat(3, 11rem);
@@ -950,11 +1068,10 @@ header nav a:hover {
    }
 }
 
-/*==================
-   DESKTOP NORMAL
-   1200px → 1799px
-===================*/
-@media (min-width: 1200px) and (max-width: 1799px) {
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
    .grid-section-video {
       grid-template-columns: repeat(3, 15rem);
       grid-template-rows: repeat(3, 12.5rem);
@@ -967,11 +1084,10 @@ header nav a:hover {
    }
 }
 
-/*==================
-   BIG DESKTOP
-   1800px +
-===================*/
-@media (min-width: 1800px) {
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
    .grid-section-video {
       grid-template-columns: repeat(3, 19rem);
       grid-template-rows: repeat(3, 16rem);
@@ -982,22 +1098,6 @@ header nav a:hover {
       width: 5rem;
       height: 5rem;
    }
-}
-
-/*==================
-   MOBILE
-   768px -
-===================*/
-@media (max-width: 768px), (hover: none) and (pointer: coarse) {
-
-   .grid-section-video {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 0.75rem;
-      width: 95vw;
-      margin: auto;
-   }
-
 }
 
 
@@ -1051,75 +1151,9 @@ header nav a:hover {
    transform: scale(1.05);
 }
 
-/*==================
-   TABLETTE
-   768px → 1199px
-===================*/
-@media (min-width: 768px) and (max-width: 1199px) {
-
-   .section-news {
-      min-height: 34rem;
-      padding: 3rem 3rem;
-   }
-
-   .section-news .grid-3 {
-      gap: 1.25rem;
-      max-width: 60rem;
-   }
-
-   .section-news .grid-3 .news-card {
-      width: calc((100% - 2.5rem) / 3);
-      max-width: 18rem;
-   }
-}
-
-/*==================
-   DESKTOP NORMAL
-   1200px → 1799px
-===================*/
-@media (min-width: 1200px) and (max-width: 1799px) {
-
-   .section-news {
-      padding: 4rem 2rem;
-   }
-
-   .section-news .grid-3 {
-      gap: 1.5rem;
-      max-width: 82rem;
-   }
-
-   .section-news .grid-3 .news-card {
-      width: 26rem;
-   }
-}
-
-/*==================
-   BIG DESKTOP
-   1800px +
-===================*/
-@media (min-width: 1800px) {
-
-   .section-news {
-      padding: 4rem 2rem;
-   }
-
-   .section-news .grid-3 {
-      gap: 2.5rem;
-      max-width: none;
-      width: auto;
-   }
-
-   .section-news .grid-3 .news-card {
-      width: 32rem;
-      min-width: 32rem;
-      flex-shrink: 0;
-   }
-}
-
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
    .section-news {
@@ -1143,12 +1177,74 @@ header nav a:hover {
 
 }
 
+/*==========================
+   TABLETTE | 768px → 1199px
+==========================*/
+@media (min-width: 768px) and (max-width: 1199px) {
+
+   .section-news {
+      min-height: 34rem;
+      padding: 3rem 3rem;
+   }
+
+   .section-news .grid-3 {
+      gap: 1.25rem;
+      max-width: 60rem;
+   }
+
+   .section-news .grid-3 .news-card {
+      width: calc((100% - 2.5rem) / 3);
+      max-width: 18rem;
+   }
+}
+
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
+   .section-news {
+      padding: 4rem 2rem;
+   }
+
+   .section-news .grid-3 {
+      gap: 1.5rem;
+      max-width: 82rem;
+   }
+
+   .section-news .grid-3 .news-card {
+      width: 32rem;
+      min-width: 32rem;
+      flex-shrink: 0;
+   }
+}
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
+   .section-news {
+      padding: 4rem 2rem;
+   }
+
+   .section-news .grid-3 {
+      gap: 2.5rem;
+      max-width: none;
+      width: auto;
+   }
+
+   .section-news .grid-3 .news-card {
+      width: 40rem;
+      min-width: 40rem;
+      flex-shrink: 0;
+   }
+}
+
 
 
 /*==========================| JOIN — SECTION |==========================*/
 .section-join {
    width: 100%;
-   height: 80vh;
+   height: 70vh;
    display: flex;
    background-image: url("./assets/images/textures/black-dotted-texture.jpg");
    background-repeat: no-repeat;
@@ -1185,40 +1281,9 @@ header nav a:hover {
    margin: 0;
 }
 
-/*==================
-   TABLETTE
-   768px → 1199px
-===================*/
-@media (min-width: 768px) and (max-width: 1199px) {
-   .section-join .join-image img {
-      width: 95%;
-   }
-}
-
-/*==================
-   DESKTOP NORMAL
-   1200px → 1799px
-===================*/
-@media (min-width: 1200px) and (max-width: 1799px) {
-   .section-join .join-image img {
-      width: 60%;
-   }
-}
-
-/*==================
-   BIG DESKTOP
-   1800px +
-===================*/
-@media (min-width: 1800px) {
-   .section-join .join-image img {
-      width: 58%;
-   }
-}
-
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
    .section-join {
@@ -1254,6 +1319,44 @@ header nav a:hover {
 
 }
 
+/*==========================
+   TABLETTE | 768px → 1199px
+==========================*/
+@media (min-width: 768px) and (max-width: 1199px) {
+   .section-join .join-image img {
+      width: 95%;
+   }
+}
+
+/*==========================
+1920px
+==========================*/
+@media (min-width: 1920px) {
+   .section-join .join-image img {
+      width: 56%;
+   }
+   .join-content .cta-button {
+      width: 28rem;
+      height: 4.6rem;
+      font-size: 2.4rem;
+   }
+}
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
+   .section-join .join-image img {
+      width: 58%;
+   }
+   .join-content .cta-button {
+      width: 34rem;
+      height: 6rem;
+      font-size: 3rem;
+   }
+}
+
+
 
 
 /*==========================| FOOTER |==========================*/
@@ -1270,10 +1373,9 @@ footer p {
    font-size: 0.6875rem;
 }
 
-/*==================
-   MOBILE
-   768px -
-===================*/
+/*==========================
+   MOBILE | 768px -
+==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
    footer {
@@ -1285,3 +1387,17 @@ footer p {
    }
 
 }
+
+/*==========================
+2560px
+==========================*/
+@media (min-width: 2560px) {
+   footer {
+      height: 3rem;
+   }
+   footer p {
+      font-size: 1rem;
+   }
+}
+
+
