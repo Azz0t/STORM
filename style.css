@@ -51,7 +51,7 @@ h2 {
 ==========================*/
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
    h2 {
-      font-size: 3.7rem;
+      font-size: 2rem;
       letter-spacing: 0.125rem;
       text-transform: uppercase;
    }
@@ -263,17 +263,17 @@ header nav a:hover {
    }
 
    .first-title {
-      width: 44rem;
+      width: 20rem;
    }
    .first-subtitle {
-      width: 44rem;
-      font-size: 1.9rem;
+      width: 20rem;
+      font-size: 0.7rem;
    }
    .cta-button {
-      width: 28rem;
-      height: 6rem;
-      margin-top: 2rem;
-      font-size: 2.7rem;
+      width: 16rem;
+      height: 3rem;
+      margin-top: 1rem;
+      font-size: 1.4rem;
    }
 }
 
@@ -393,7 +393,7 @@ header nav a:hover {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 3rem;
+      gap: 2rem;
       width: 100%;
    }
 
@@ -405,17 +405,17 @@ header nav a:hover {
 
    .section-activity .commitments-card .box-image {
       width: 80%;
-      height: 38rem;
+      height: 20rem;
       margin: 0 auto;
    }
 
    .section-activity .commitments-card .box-text {
-      margin: 0.75rem 0 0 11rem;
+      margin: 0.5rem 0 0 4.4rem;
    }
 
    .section-activity .commitments-card .box-text h3 {
-      padding-left: 1rem;
-      font-size: 2.2rem;
+      padding-left: 0.7rem;
+      font-size: 1.4rem;
    }
    .section-activity .commitments-card .box-image img {
       filter: grayscale(0%);
@@ -425,7 +425,7 @@ header nav a:hover {
 /*==========================
    TABLETTE | 768px → 1199px
 ==========================*/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1199px) {
 
    .section-activity {
       min-height: 50rem;
@@ -579,19 +579,28 @@ header nav a:hover {
 
    .section-history {
       gap: 0rem;
+      height: 56rem;
+      flex-direction: column;
+   }
+   .section-history .box-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
    }
    .section-history .box-text {
       max-width: 30rem;
+      margin: 0 30px;
    }
    .section-history .box-text h2 {
-      font-size: 2.7rem;
+      font-size: 1.9rem;
       margin-bottom: 1rem;
       letter-spacing: 0.06rem;
    }
 
    .section-history .box-text p {
-      font-size: 1.2rem;
-      line-height: 1.6;
+      font-size: 1.1rem;
+      line-height: 1.2;
       margin: 0 0 0.3rem 0;
    }
 
@@ -761,11 +770,11 @@ header nav a:hover {
 /*==========================
    MOBILE | 768px -
 ==========================*/
-@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+@media (max-width: 768px) {
 
    .section-сommand {
       min-height: auto;
-      padding: 4rem 0.25rem;
+      padding: 4rem 1rem;
    }
 
    .box-commanders {
@@ -777,48 +786,48 @@ header nav a:hover {
       display: grid;
       grid-template-columns: 1fr;
       justify-items: center;
-      gap: 5rem;
+      gap: 2rem;
       width: 100%;
    }
 
    .grid-3 > * {
-      width: 80%;
-      height: 80%;
+      width: 100%;
+      max-width: 22rem;
+      height: auto;     
    }
 
    .section-сommand .box-image {
       width: 100%;
       height: auto;
-      margin: 0 auto;
+      aspect-ratio: 4 / 5; 
    }
 
    .section-сommand .box-texte {
-      padding: 1.5rem 1.5rem 1.8rem;
+      padding: 1rem 1.25rem 1.25rem;
    }
 
    .section-сommand .box-texte h3 {
-      font-size: 3.3rem;
+      font-size: 1.4rem;
       letter-spacing: .08em;
    }
 
    .section-сommand .box-texte p {
-      font-size: 1.5rem;
+      font-size: 0.7rem;
       letter-spacing: .12em;
    }
 
    .section-сommand .rank-tag {
       top: 0.75rem;
       left: 0.9rem;
-      font-size: 1.5rem;
+      font-size: 0.65rem;
       padding: 0.25rem 0.5rem;
    }
-
 }
 
 /*==========================
    TABLETTE | 768px → 1199px
 ==========================*/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1199px) {
 
    .section-сommand {
       min-height: 53rem;
@@ -1055,7 +1064,7 @@ header nav a:hover {
 /*==========================
    TABLETTE | 768px → 1199px
 ==========================*/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1199px) {
    .grid-section-video {
       grid-template-columns: repeat(3, 11rem);
       grid-template-rows: repeat(3, 9rem);
@@ -1165,7 +1174,7 @@ header nav a:hover {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 3rem;
+      gap: 1rem;
       width: 100%;
    }
 
@@ -1180,7 +1189,7 @@ header nav a:hover {
 /*==========================
    TABLETTE | 768px → 1199px
 ==========================*/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1199px) {
 
    .section-news {
       min-height: 34rem;
@@ -1293,7 +1302,7 @@ header nav a:hover {
 
    .section-join .join-content {
       width: 100%;
-      margin-top: 200px;
+      margin-top: 0px;
       justify-content: center;
       align-items: center;
       padding: 4rem 1rem 2rem;
@@ -1312,9 +1321,9 @@ header nav a:hover {
    }
 
    .join-content .cta-button {
-      width: 40rem;
-      height: 8rem;
-      font-size: 4rem;
+      width: 20rem;
+      height: 4rem;
+      font-size: 1.8rem;
    }
 
 }
@@ -1322,7 +1331,7 @@ header nav a:hover {
 /*==========================
    TABLETTE | 768px → 1199px
 ==========================*/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1199px) {
    .section-join .join-image img {
       width: 95%;
    }
@@ -1379,11 +1388,11 @@ footer p {
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
 
    footer {
-      height: 6rem;
+      height: 4rem;
    }
 
    footer p {
-      font-size: 1.5rem;
+      font-size: 0.7rem;
    }
 
 }
